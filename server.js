@@ -14,15 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "http://localhost:3001",
-      "http://localhost:3002",
-    ],
-  })
-);
+app.use(cors({ origin: 'https://saurabhs-meet.netlify.app' }));
 
 // Make request using body x-www
 app.use("/api/users", require("./routes/authRoute"));
