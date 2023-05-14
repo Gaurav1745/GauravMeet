@@ -28,4 +28,4 @@ app.use(
 app.use("/api/users", require("./routes/authRoute"));
 app.use("/api/meetings", require("./routes/meetingRoute"));
 
-app.listen(port, () => console.log(`Server started on port ${port}`));
+app.listen(process.env.PORT, () => console.log(`Server started on port ${port}`));
