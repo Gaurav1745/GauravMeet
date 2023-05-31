@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(cors({ 
-  origin: ['https://saurabhs-meet.netlify.app', 'https://meetsaurav.netlify.app']
+  origin: ['https://saurabhs-meet.netlify.app', 'https://meeetsaurav.netlify.app']
 }));
 
 // Make request using body x-www
